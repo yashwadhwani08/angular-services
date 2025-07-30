@@ -15,6 +15,6 @@ export class TasksService {
       id: Math.random().toString(),
       status: 'OPEN',
     };
-    this.tasks.update((oldTasks) => [...oldTasks, task]);
+    this.tasks.update((oldTasks) => [...oldTasks, newTask]);
   }
 }
