@@ -1,3 +1,6 @@
+# angular-services
+This project is aimed at better understanding of Angular services, and why they should be used
+
 # ServicesDeepDive
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
