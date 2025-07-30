@@ -7,7 +7,13 @@ import { Task } from './task.model';
 export class TasksService {
   constructor() {}
 
-  tasks = signal<Task[]>([]);
+  private tasks = signal<Task[]>([]);
+
+  allTasks = this.tasks.asReadonly();
+
+  // allTasks() {
+  //   return this.tasks();
+  // }
 
   addTask(taskData: { title: string; description: string }) {
     const newTask: Task = {
